@@ -1,4 +1,8 @@
-## Important: Because the whole docker container file is too big, I only uploaded my modified files and created logs. Please replace your "logs","rldm" folders with my folders in the container directory,  then run it.
+# Multi-agent Reinforcement Learning in Football Environment
+
+Reinforcement learning with a multiagent system is a more complex problem than single-agent reinforcement learning. In multi-agent RL we need to achieve not only maximize the reward but studying how multiple agents interact in the same environment. The interaction between agents can be cooperation, competition, or mixed, depending on the environment and training goal. In this report, I experimented with several multi-agent RL algorithms, including Proximal Policy Optimization (PPO) and Importance-weighted Actor-Learner Architecture (IMPALA), in the google research Football environment. My focus is on maximizing the reward while improving the cooperation behavior of players. To compare these algorithms, I analyzed the training results of the trained agents, and the learning metrics and agents’ behavior statics during training.
+
+# Code Usage
 
 ## The Algorithms I implemented are in rldm/scripts folder, to run the algorithms
 
