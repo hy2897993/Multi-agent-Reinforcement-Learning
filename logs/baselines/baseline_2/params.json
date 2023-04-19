@@ -1,0 +1,56 @@
+{
+  "batch_mode": "truncate_episodes",
+  "callbacks": "<class 'rldm.utils.football_tools.FootballCallbacks'>",
+  "clip_param": 0.21266389314150685,
+  "entropy_coeff": 0.005566286009655592,
+  "env": "3_vs_3_auto_GK",
+  "framework": "torch",
+  "gamma": 0.993414037753416,
+  "horizon": 500,
+  "ignore_worker_failures": false,
+  "kl_coeff": 0.9815288632630256,
+  "kl_target": 0.03534104173583997,
+  "lambda": 0.9335783374825648,
+  "log_level": "INFO",
+  "lr": 0.00014742259985934628,
+  "model": {
+    "fcnet_activation": "relu",
+    "fcnet_hiddens": [
+      128,
+      256
+    ],
+    "lstm_cell_size": 256,
+    "lstm_use_prev_action": "false",
+    "lstm_use_prev_reward": "true",
+    "max_seq_len": 19,
+    "use_lstm": "true",
+    "vf_share_layers": "false"
+  },
+  "multiagent": {
+    "policies": {
+      "agent_0": [
+        null,
+        "Box([-inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf\n -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf\n -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf\n -inf], [inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf\n inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf\n inf inf inf inf inf inf inf], (43,), float32)",
+        "Discrete(19)",
+        {}
+      ],
+      "agent_1": [
+        null,
+        "Box([-inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf\n -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf\n -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf\n -inf], [inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf\n inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf\n inf inf inf inf inf inf inf], (43,), float32)",
+        "Discrete(19)",
+        {}
+      ]
+    },
+    "policy_mapping_fn": "<function main.<locals>.<lambda> at 0x7fd107294b90>"
+  },
+  "num_envs_per_worker": 1,
+  "num_gpus": 1,
+  "num_sgd_iter": 14,
+  "num_workers": 31,
+  "observation_filter": "NoFilter",
+  "rollout_fragment_length": 100,
+  "sgd_minibatch_size": 128,
+  "train_batch_size": 2800,
+  "vf_clip_param": 0.5402793132429065,
+  "vf_loss_coeff": 0.727834248507896
+}

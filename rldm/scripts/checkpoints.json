@@ -1,0 +1,7 @@
+{
+        "PPO+CC": ["PPO", "/mnt/logs/train_agents_CC_restore_3_vs_3_auto_GK_independent_20000000_fifo_fixed/PPO_3_vs_3_auto_GK_784d3_00000_0_2022-07-23_22-04-49/checkpoint_002300/checkpoint-2300"],
+        "IMPALA": ["IMPALA", "/mnt/logs/train_agents_IMPALA_3_vs_3_auto_GK_independent_10000000_fifo_fixed/IMPALA_3_vs_3_auto_GK_5308c_00000_0_2022-07-20_03-59-16/checkpoint_001800/checkpoint-1800"],
+        "Baseline 1": ["PPO", "/mnt/logs/baselines/baseline_1/checkpoint_0/checkpoint-0"],
+        "Baseline 2": ["PPO", "/mnt/logs/baselines/baseline_2/checkpoint_0/checkpoint-0"],
+        "Baseline 3": ["PPO", "/mnt/logs/baselines/baseline_3/checkpoint_0/checkpoint-0"]
+}

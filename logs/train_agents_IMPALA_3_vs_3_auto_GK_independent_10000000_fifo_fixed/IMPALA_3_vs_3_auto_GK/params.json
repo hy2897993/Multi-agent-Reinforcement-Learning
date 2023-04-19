@@ -1,0 +1,50 @@
+{
+  "batch_mode": "truncate_episodes",
+  "callbacks": "<class 'rldm.utils.football_tools_modified.FootballCallbacks'>",
+  "clip_rewards": true,
+  "env": "3_vs_3_auto_GK",
+  "framework": "torch",
+  "lr_schedule": [
+    [
+      0,
+      0.0005
+    ],
+    [
+      10000000,
+      1e-12
+    ]
+  ],
+  "model": {
+    "fcnet_activation": "linear",
+    "fcnet_hiddens": [
+      128,
+      256,
+      64
+    ],
+    "vf_share_layers": true
+  },
+  "multiagent": {
+    "policies": {
+      "agent_0": [
+        null,
+        "Box([-inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf\n -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf\n -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf\n -inf], [inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf\n inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf\n inf inf inf inf inf inf inf], (43,), float32)",
+        "Discrete(19)",
+        {}
+      ],
+      "agent_1": [
+        null,
+        "Box([-inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf\n -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf\n -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf\n -inf], [inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf\n inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf\n inf inf inf inf inf inf inf], (43,), float32)",
+        "Discrete(19)",
+        {}
+      ]
+    },
+    "policy_mapping_fn": "<function main.<locals>.<lambda> at 0x7f8cd1dea9e0>"
+  },
+  "num_gpus": 1,
+  "num_sgd_iter": 1,
+  "num_workers": 7,
+  "rollout_fragment_length": 100,
+  "simple_optimizer": 1,
+  "train_batch_size": 500,
+  "vtrace": true
+}

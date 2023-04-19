@@ -1,0 +1,56 @@
+{
+  "batch_mode": "truncate_episodes",
+  "callbacks": "<class 'rldm.utils.football_tools.FootballCallbacks'>",
+  "clip_param": 0.20425701146213993,
+  "entropy_coeff": 0.0004158966184268587,
+  "env": "3_vs_3_auto_GK",
+  "framework": "torch",
+  "gamma": 0.9936809332376452,
+  "horizon": 500,
+  "ignore_worker_failures": false,
+  "kl_coeff": 1.0,
+  "kl_target": 0.010117093480119358,
+  "lambda": 0.9517171675473532,
+  "log_level": "INFO",
+  "lr": 0.00022602718266055705,
+  "model": {
+    "fcnet_activation": "tanh",
+    "fcnet_hiddens": [
+      256,
+      256
+    ],
+    "lstm_cell_size": 256,
+    "lstm_use_prev_action": "true",
+    "lstm_use_prev_reward": "true",
+    "max_seq_len": 13,
+    "use_lstm": "true",
+    "vf_share_layers": "true"
+  },
+  "multiagent": {
+    "policies": {
+      "agent_0": [
+        null,
+        "Box([-inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf\n -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf\n -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf\n -inf], [inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf\n inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf\n inf inf inf inf inf inf inf], (43,), float32)",
+        "Discrete(19)",
+        {}
+      ],
+      "agent_1": [
+        null,
+        "Box([-inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf\n -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf\n -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf -inf\n -inf], [inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf\n inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf inf\n inf inf inf inf inf inf inf], (43,), float32)",
+        "Discrete(19)",
+        {}
+      ]
+    },
+    "policy_mapping_fn": "<function main.<locals>.<lambda> at 0x7f8dbcff2c20>"
+  },
+  "num_envs_per_worker": 1,
+  "num_gpus": 1,
+  "num_sgd_iter": 16,
+  "num_workers": 31,
+  "observation_filter": "NoFilter",
+  "rollout_fragment_length": 100,
+  "sgd_minibatch_size": 128,
+  "train_batch_size": 2800,
+  "vf_clip_param": 1.4862186106326711,
+  "vf_loss_coeff": 0.3503035138680095
+}
